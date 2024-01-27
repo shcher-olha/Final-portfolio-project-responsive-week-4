@@ -1,9 +1,9 @@
 :root {
   --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --secondary-color: #DDF5FA;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --navbar-background-color: rgb(244, 242, 249);
+  
 }
 
 body {
@@ -29,15 +29,18 @@ h1 {
 h2 {
   font-size: 64px;
 }
-
+.logo {
+  max-height: 45px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--branding-color);
+}
 p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
 }
-.navbar-background {
-  background-color: var(--navbar-background-color);
-}
+
 .logo-name {
   font-family: var(--heading-font-family);
   font-size: xx-large;
