@@ -3,7 +3,7 @@
   --secondary-color: #DDF5FA;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  
+  --navbar-background-color: rgb(244, 242, 249);
 }
 
 body {
@@ -29,33 +29,43 @@ h1 {
 h2 {
   font-size: 64px;
 }
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+img {
+  border-radius: 15px;
+}
+
 .logo {
   max-height: 45px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--branding-color);
 }
-p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-}
 
+.navbar-background {
+  background-color: var(--navbar-background-color);
+}
 .logo-name {
   font-family: var(--heading-font-family);
   font-size: xx-large;
-
 }
 .navbar-menu {
   font-family: var(--heading-font-family);
   font-size: 25px;
 }
 
-
 .hero {
   background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
+}
+.about-section {
+  text-align: center;
+  padding: 0;
 }
 
 .hero p {
@@ -71,7 +81,22 @@ p {
   line-height: 1.5;
   font-size: 24px;
 }
+.about-section {
+  padding: 160px 20px;
+}
 
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+.about-section-content {
+  margin: 30px;
+}
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -108,7 +133,7 @@ p {
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 2;
+    line-height: 56px;
   }
 
   h2 {
@@ -124,3 +149,4 @@ p {
     text-align: center;
   }
 }
+
