@@ -112,6 +112,7 @@ img {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  box-shadow: 10px 10px 10px  #89898e;
 }
 .btn-branding:hover {
   color: white;
@@ -125,6 +126,7 @@ img {
   text-decoration: none;
   line-height: 27px;
   padding: 15px 30px;
+  box-shadow: 10px 10px 10px  #89898e;
 }
 .btn-branding-outline:hover {
   background: var(--branding-color);

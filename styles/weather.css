@@ -1,5 +1,5 @@
 body {
-  background-image: url(../image/stars.jpg);
+  background-image: url(../images/stars.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -54,7 +54,7 @@ main {
   justify-content: space-between;
 }
 .weather-app-city {
-  margin: 0;
+  margin: 25px;
   font-size: 55px;
   line-height: 48px;
 
