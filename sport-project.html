@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_Project_1_Week</title>
+    <style>
+      body {
+        background: linear-gradient(#c1f9ef, #aad4c2, white);
+      }
+      h1 {
+        text-align: center;
+        color: #004445;
+        font-size: 3em;
+        font-weight: bold;
+        border: 2px solid #004445;
+      }
+      h2 {
+        text-align: center;
+        color: #052e66;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        border-radius: 300px 0px;
+      }
+      p {
+        line-height: 1.2;
+        font-size: 17px;
+        margin: 20px 10px;
+        font-weight: bold;
+      }
+      span {
+        line-height: 1.5;
+        color: #052e66;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #052e66;
+        color: white;
+        font-size: 18px;
+        padding: 15px 50px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 10px -10px 5px rgba(12, 7, 108, 0.368);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background: #004445;
+        color: white;
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      .motivation-quotes {
+        color: #052e66;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      .motivation-quotes:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-size: 15px;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love sport</h1>
+      <h2>Sport shapes a culture of optimism and cheerfulness.</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/952/original/sopt_fitness.jpg?1695417935"
+        alt="sport_fitness"
+      />
+      <hr />
+      <p>
+        <em
+          ><span
+            >Without a doubt, sport helps us not only be healthy and strong in
+            spirit, but also strengthens our character.</span
+          ></em
+        >
+        <br />
+        It develops qualities that help us become self-sufficient individuals
+        and achieve success in life. Most athletes set a bar that is not easy to
+        achieve. They spend months, or even years, until they reach their goal.
+        Therefore, sport teaches patience, perseverance, concentration,
+        responsibility, and the ability to make decisions.<br />
+        <em
+          ><span>It also develops team spirit and leadership skills.</span></em
+        >
+      </p>
+      <a
+        href="https://www.lottoland.co.za/magazine/99-motivational-sports-quotes.html"
+        target="_blank"
+        class="motivation-quotes"
+      >
+        Best sport Motivation Quotes
+      </a>
+      <hr />
+      <button class="join-us">Join us</button>
+      <p class="footer">This page was built by Olha Shcherbak</p>
+    </div>
+    <script>
+      function join() {
+        let name = prompt("What is your name?");
+        let phoneNumber = prompt("What is your phone number?");
+        let age = prompt("How old are you?");
+        if (age >= 16) {
+          alert(`Hi ${name}! We'll contact you tomorrow😉`);
+        } else {
+          alert(
+            `Hi ${name}! We'll definitely contact you when enrollment in the children's group opens.
+            Have a good day😉`
+          );
+        }
+      }
+
+      let joinUs = document.querySelector(".join-us");
+      joinUs.addEventListener("click", join);
+    </script>
+  </body>
+</html>
